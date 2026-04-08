@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Demo</title>
+    <style>
+        .container {
+            display: flex;                 /* Makes it flex */
+            background-color: lightgray;
+            padding: 100px;
+            flex-direction: column;
+            justify-content: space-between; /* Horizontal spacing */
+            align-items:center;           /* Vertical alignment */
+            height: 56px;
+        }
+
+        .box {
+            background-color: teal;
+            color: white;
+            padding:15px;
+            margin: 5px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Simple Flexbox Example</h2>
+
+    <div class="container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+
+</body>
+</html>
