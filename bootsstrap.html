@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+.logo{
+  font-size: 29px;
+  font-weight: bold;
+  color: #ff4b4b;
+}
+
+.search{
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Keep only one */
+.search .row{
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.search input,
+.search select{
+  border: none;
+  box-shadow: none;
+}
+
+.border-end{
+  border-right: 1px solid #ddd !important;
+}
+
+.search input:focus,
+.search select:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,113,194,0.3);
+  background-color: #f8f9fa;
+}
+
+.btn-primary{
+  background-color: #0071c2;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #005999;
+}
+
+.btn-primary:focus{
+  box-shadow: 0 0 0 3px rgba(0,113,194,0.3);
+}
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <nav class="navbar-custom">
+    <div class="d-flex justify-content-between align-items-center">
+
+      <img src="https://1000logos.net/wp-content/uploads/2020/09/Trivago-Logo.jpg" style="width:100px">
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-dark fw-bold">
+          <i class="fa-solid fa-globe me-1"></i> EN
+          <i class="fa-solid fa-indian-rupee-sign ms-1"></i>
+        </button>
+
+        <button class="btn btn-outline-dark fw-bold">
+          <i class="fa-solid fa-user me-1"></i> Sign in
+        </button>
+
+       <div class="dropdown">
+  <button class="btn btn-outline-dark fw-bold dropdown-toggle" data-bs-toggle="dropdown">
+    <i class="fa-solid fa-bars"></i> Menu
+  </button>
+
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">My bookings</a></li>
+    <li><a class="dropdown-item" href="#">Settings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+  </ul>
+</div>
+      </div>
+
+    </div>
+  </nav>
+</div>
+<div></div>
+<div class="container mt-5">
+
+  <h3 class="fw-bold mb-3">Save up to 55% on your next hotel stay</h3>
+  <p class="text-secondary mb-4">We compare hotel prices from over 100 sites</p>
+
+  <div class="bg-white rounded shadow-lg p-3 mb-4">
+    <div class="row g-0 align-items-center">
+
+      
+    <div class="col-md-5 px-3 border-end d-flex align-items-center">
+      <i class="fa-solid fa-magnifying-glass me-2 text-secondary"></i>
+      <input type="text" class="form-control border-0" placeholder="Where to?">
+    </div>
+
+
+      <div class="col-md-3 px-3 border-end d-flex align-items-center">
+  <i class="fa-regular fa-calendar me-2 text-secondary"></i>
+  <input type="date" class="form-control border-0">
+</div>
+
+      <div class="col-md-3 px-3 border-end">
+        <select class="form-select border-0">
+          <option>2 Guests, 1 Room</option>
+        </select>
+      </div>
+
+      <div class="col-md-1 d-grid">
+
+        <button class="btn btn-primary w-100">Search</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center gap-5 mt-3 small text-secondary">
+    <span>agoda</span>
+    <span>Hotels.com</span>
+    <span>Booking.com</span>
+    <span>Trip.com</span>
+    <span>OYO</span>
+    <span>+100 more</span>
+  </div>
+
+</div>
+<div class="container mt-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3034/x_0,y_111,w_5000,h_2812,r_0,c_crop/q_80,w_960,dpr_1,f_auto,fl_progressive,c_limit/m-pro-palace-mysore/deluxe_2_3e3f851b" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Lotus Sutra</h5>
+          <p class="text-muted small mb-2">Morjim, India</p>
+          <span class="badge bg-success">8.0</span>
+          <span class="small text-muted ms-1">Very good (5,455)</span>
+          <p class="mt-2 mb-1 small">Agoda</p>
+          <h4 class="fw-bold mb-1">₹2,626 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">37% lower than other sites</span>
+          <p class="small text-muted mb-0">May 21 - May 22 | Free cancellation</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/2e/37/75/34/superior-room-twin.jpg" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Ramtan Resort</h5>
+          <p class="text-muted small mb-2">calamgute, India</p>
+          <span class="badge bg-success">6.0</span>
+          <span class="small text-muted ms-1"> good (5,455)</span>
+          <p class="mt-2 mb-1 small">Agoda</p>
+          <h4 class="fw-bold mb-1">₹2,666 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">67% lower than other sites</span>
+          <p class="small text-muted mb-0">May 21 - May 26 | Free cancellation</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Flora Residency</h5>
+          <p class="text-muted small mb-2">calamgute, India</p>
+          <span class="badge bg-success">8.5</span>
+          <span class="small text-muted ms-1"> very good (5,455)</span>
+          <p class="mt-2 mb-1 small">Agoda</p>
+          <h4 class="fw-bold mb-1">₹2,666 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">14% lower than other sites</span>
+          <p class="small text-muted mb-0">April 21 - May 26 | Free cancellation</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://content.jdmagicbox.com/v2/comp/hyderabad/a9/040pxx40.xx40.151018072515.d5a9/catalog/hotel-formule1-hitech-city-hyderabad-hotels-3zk91.jpg" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Dlora Villa </h5>
+          <p class="text-muted small mb-2">calamgute, India</p>
+          <span class="badge bg-success">7.5</span>
+          <span class="small text-muted ms-1"> very good (5,455)</span>
+          <p class="mt-2 mb-1 small">Agoda</p>
+          <h4 class="fw-bold mb-1">₹1,666 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">20% lower than other sites</span>
+          <p class="small text-muted mb-0">April 21 - May 26 | Free cancellation</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTawER86RN_rtTM7v-glvVsFmBh1FmOBixUsw&s" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Flora Residency</h5>
+          <p class="text-muted small mb-2">calamgute, India</p>
+          <span class="badge bg-success">8.5</span>
+          <span class="small text-muted ms-1"> very good (5,455)</span>
+          <p class="mt-2 mb-1 small">Agoda</p>
+          <h4 class="fw-bold mb-1">₹2,666 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">44% lower than other sites</span>
+          <p class="small text-muted mb-0">April 21 - May 26 | Free cancellation</p>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+      <div class="card border-0 shadow-lg rounded-4">
+        <img src="https://thumbs.dreamstime.com/b/cave-bedroom-aegean-sea-view-luxury-resort-interior-room-design-bed-ocean-sunrise-morning-sunlight-over-water-travel-holiday-385663479.jpg" class="card-img-top rounded-top-4">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Nayora Residency</h5>
+          <p class="text-muted small mb-2">Mumbai, India</p>
+          <span class="badge bg-success">9.0</span>
+          <span class="small text-muted ms-1"> Super (5,455)</span>
+          <p class="mt-2 mb-1 small">Bagoda</p>
+          <h4 class="fw-bold mb-1">₹3,666 <span class="fs-6 fw-normal">per night</span></h4>
+          <span class="badge bg-danger mb-2">14% lower than other sites</span>
+          <p class="small text-muted mb-0">April 21 - june 26 | Free cancellation</p>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="bg-dark text-white mt-5 p-4">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-md-4">
+        <h5>trivago</h5>
+        <p class="small">Search and compare hotel prices from top websites.</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4">
+        <h6>Company</h6>
+        <ul class="list-unstyled small">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Press</li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4">
+        <h6>Support</h6>
+        <ul class="list-unstyled small">
+          <li>Help</li>
+          <li>Contact 9074524093 </li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="d-flex gap-2">
+      <a href="https://www.instagram.com" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+    </div>
+
+    <!-- Bottom line -->
+    <div class="text-center mt-3 small">
+      © 2026 trivago clone
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
+  
